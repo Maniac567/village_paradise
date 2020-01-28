@@ -4,7 +4,6 @@ image_speed = 0;
 acceleration_ = .5;
 max_speed_ = 1.5;
 direction_facing_ = dir.right;
-alarm[1] = global.one_second;
 
 enum player {
 	move,

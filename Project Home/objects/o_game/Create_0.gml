@@ -4,11 +4,11 @@ global.destroyed = [];
 
 //var _font_string = "ABCDEFGHIJKLMNOPQRSTUVWXYZ.abcdefghijklmnopqrstuvwxyz1234567890>,!':-+";
 //global.font = font_add_sprite_ext(s_font, _font_string, true, 1);
-draw_set_font(global.font);
+//draw_set_font(global.font);
 
 global.player_gems = 0;
-global.player_start_position = i_game_start;
-global.load = false;
+//global.player_start_position = i_game_start;
+//global.load = false;
 global.start_x = noone;
 global.start_y = noone;
 
@@ -21,11 +21,11 @@ paused_ = false;
 paused_sprite_ = noone;
 paused_sprite_scale = display_get_gui_width()/view_wport[0];
 
-global.item[0] = noone;
-global.item[1] = noone;
-item_index_ = 0;
+//global.item[0] = noone;
+//global.item[1] = noone;
+//item_index_ = 0;
 
-inventory_create(6);
+//inventory_create(6);
 //inventory_add_item(o_ring_item);
 //inventory_add_item(o_bow_item);
 //inventory_add_item(o_bomb_item);
