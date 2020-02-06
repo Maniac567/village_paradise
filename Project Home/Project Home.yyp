@@ -34,7 +34,7 @@
             "Key": "07a92b67-4c24-4de8-ac10-d30d639908ba",
             "Value": {
                 "id": "93223bc8-3ac8-4ddb-b0fe-8d5fd9009e65",
-                "resourcePath": "rooms\\room0\\room0.yy",
+                "resourcePath": "rooms\\r_world\\r_world.yy",
                 "resourceType": "GMRoom"
             }
         },
@@ -60,6 +60,14 @@
                 "id": "886a7161-89b1-4112-889f-7fe2c13a1f4c",
                 "resourcePath": "views\\137562d2-68e3-4884-92eb-160c106ddf72.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "14abfeef-ccd4-4299-9b92-c85ad84429cd",
+            "Value": {
+                "id": "1b733ea8-6fa8-4570-86e5-45f78c1b3ea7",
+                "resourcePath": "scripts\\round_n\\round_n.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -116,6 +124,14 @@
                 "id": "1bc19a2c-34a4-4bb4-8129-dd940b7159b4",
                 "resourcePath": "scripts\\singleton\\singleton.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "219f984d-8344-4299-8c32-3d602e43fbc5",
+            "Value": {
+                "id": "4bd847ae-2b46-4e9f-9b07-798a599d634e",
+                "resourcePath": "objects\\o_camera\\o_camera.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -268,6 +284,14 @@
                 "id": "3534b1a5-3e5e-4628-857f-532022731919",
                 "resourcePath": "scripts\\animation_hit_frame\\animation_hit_frame.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "82c0d52f-8aea-4704-ac76-72ea55f86523",
+            "Value": {
+                "id": "fc76a6e3-e2a8-4bc5-bff3-7dad4002cdda",
+                "resourcePath": "rooms\\r_init\\r_init.yy",
+                "resourceType": "GMRoom"
             }
         },
         {
@@ -536,6 +560,7 @@
         "7f171ff9-156c-4766-879c-d000078fff34",
         "ef8656da-9c67-47f8-a708-0c906da7bb77",
         "2100dbd1-233d-4853-90bc-6e3c3f666597",
+        "14abfeef-ccd4-4299-9b92-c85ad84429cd",
         "73e2c798-26bc-426f-9b06-5e0ee40c5349",
         "3896a72c-82b2-4e27-a361-9fde99f8072b",
         "0ece030d-b6d0-4788-9de2-43ff7b9666c1",
