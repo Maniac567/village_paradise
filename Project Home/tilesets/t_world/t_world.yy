@@ -111,7 +111,7 @@
             "closed_edge": false,
             "name": "water_boarder",
             "tiles": [
-                48,
+                170,
                 153,
                 152,
                 150,

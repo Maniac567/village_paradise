@@ -1,8 +1,8 @@
 {
-    "id": "8e689a55-fff4-4c3a-a636-1dccbb8b0459",
+    "id": "1b68d120-7b7f-4cdc-a791-c4218ead9d95",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "o_solid",
+    "name": "o_cabin3",
     "eventList": [
         
     ],
@@ -24,6 +24,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "3ebf883d-b569-4cb9-ae88-6174e0153d32",
-    "visible": false
+    "spriteId": "c7375e96-01ca-4ad9-a15e-74d640352033",
+    "visible": true
 }
