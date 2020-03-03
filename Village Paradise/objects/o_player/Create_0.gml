@@ -7,7 +7,8 @@ direction_facing_ = dir.right;
 
 enum player {
 	move,
-	bow
+	axe,
+	shovel
 }
 
 enum dir {
