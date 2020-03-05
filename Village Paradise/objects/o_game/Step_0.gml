@@ -1,3 +1,17 @@
+if (!paused_)
+{
+	var _array_size = array_length_1d(global.inventory);
+	
+	if (o_input.mouse_wheel_up_)
+	{
+		item_index_ = min(item_index_+1, _array_size-1);
+	}
+	if (o_input.mouse_wheel_down_)
+	{
+		item_index_ = max(item_index_-1, 0);
+	}
+}
+
 if (o_input.pause_pressed_)
 {
 	if paused_
@@ -21,4 +35,9 @@ if (o_input.pause_pressed_)
 		}
 		instance_activate_object(o_input);
 	}
+}
+
+if (paused_)
+{
+	window_get_cursor()
 }

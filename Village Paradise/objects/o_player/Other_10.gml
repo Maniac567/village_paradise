@@ -20,7 +20,7 @@ if _x_input == 0 and _y_input == 0 {
 	roll_direction_ = direction_facing_*90;
 }
 
-//use_inventory_item(o_input.action_one_pressed_, global.item[0], action.one);
+//use_inventory_item(o_input.action_pressed_, global.item[0], action.one);
 //use_inventory_item(o_input.action_two_pressed_, global.item[1], action.two);
 
 

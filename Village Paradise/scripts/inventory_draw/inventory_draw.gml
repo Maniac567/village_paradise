@@ -1,11 +1,12 @@
 ///@arg x
 ///@arg y
-if not o_game.paused_ exit;
+
 var _x = argument0;
 var _y = argument1;
 var _array_size = array_length_1d(global.inventory);
 
-for (var _i=0; _i<_array_size; _i++) {
+for (var _i=0; _i<_array_size; _i++) 
+{
 	var _box_x = _x+_i*32;
 	var _box_y = _y;
 	draw_sprite(s_inventory_box, 0, _box_x, _box_y);
@@ -18,17 +19,14 @@ for (var _i=0; _i<_array_size; _i++) {
 //		{
 //			draw_text(_box_x+20, _box_y+4, _item.amount_);
 //		}
-//	}
+	}
 	
-//	if _i == item_index_
-//	{
-//		draw_sprite(s_pause_cursor, image_index/8, _box_x, _box_y);
-//		if instance_exists(_item)
-//		{
-//			draw_text(_x+4, _y+36, _item.description_);
-//			var _description_height = string_height(_item.description_);
-//			draw_text(_x+4, _y+38+_description_height, "Stamina cost: " + string(_item.cost_));
-//		}
+	if (!paused_)
+	{
+		if _i == item_index_
+		{
+			draw_sprite(s_pause_cursor, image_index = 0, _box_x, _box_y);
+		}
 	}
 }
 
