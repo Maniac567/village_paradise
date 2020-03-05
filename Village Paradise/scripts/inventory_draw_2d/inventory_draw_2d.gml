@@ -17,6 +17,7 @@ for (var _i=0; _i< array_height_2d(global.inventory_2d); _i++)
 		if instance_exists(_item) 
 		{
 			draw_sprite(_item.sprite_, 0, _box_x+16, _box_y+16);
+			//instance_create_layer(_box_x+16, _box_y+16, "Instances", _item);	
 		}
 	}
 }
