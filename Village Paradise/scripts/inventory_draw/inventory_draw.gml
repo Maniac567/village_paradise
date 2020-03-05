@@ -15,6 +15,7 @@ for (var _i=0; _i<_array_size; _i++)
 	if instance_exists(_item) 
 	{
 		draw_sprite(_item.sprite_, 0, _box_x+16, _box_y+16);
+		//instance_create_layer(_box_x+16, _box_y+16, "Instances", _item);
 //		if _item.show_amount_ == true
 //		{
 //			draw_text(_box_x+20, _box_y+4, _item.amount_);

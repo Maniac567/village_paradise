@@ -36,8 +36,3 @@ if (o_input.pause_pressed_)
 		instance_activate_object(o_input);
 	}
 }
-
-if (paused_)
-{
-	window_get_cursor()
-}

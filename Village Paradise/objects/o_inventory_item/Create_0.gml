@@ -3,5 +3,3 @@ description_ = "";
 show_amount_ = false;
 amount_ = 0;
 action_ = player.axe;
-
-is_dragged_ = false;
