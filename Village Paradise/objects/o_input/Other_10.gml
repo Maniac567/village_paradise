@@ -7,6 +7,7 @@ mouse_wheel_up_ = mouse_wheel_up();
 mouse_wheel_down_ = mouse_wheel_down();
 
 action_pressed_ = mouse_check_button_pressed(mb_left);
+action_released_ = mouse_check_button_released(mb_left);
 
 action_one_ = mouse_check_button(mb_left);
 
