@@ -37,3 +37,15 @@ sprite_[player.move, dir.down] = s_player_run_down;
 //sprite_[player.bow, dir.up] = s_player_bow_up;
 //sprite_[player.bow, dir.left] = s_player_bow_right;
 //sprite_[player.bow, dir.down] = s_player_bow_down;
+
+//--------Dialogue Stuff
+reset_dialogue_defaults();
+myPortrait			= spr_portrait_player;
+myVoice				= snd_voice2;
+myFont				= fnt_dialogue;
+myName				= "Fox";
+
+myPortraitTalk		= spr_portrait_examplechar_mouth;
+myPortraitTalk_x	= 26;
+myPortraitTalk_y	= 44;
+myPortraitIdle		= spr_portrait_examplechar_idle;
