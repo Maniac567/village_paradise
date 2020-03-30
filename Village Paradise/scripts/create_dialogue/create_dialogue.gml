@@ -88,14 +88,14 @@ with(_textbox){
 		else { portrait_idle_y[i] = -1; }
 		
 		
-		if(portrait_talk[i] != -1){ 
-			portrait_talk_n[i] = sprite_get_number(portrait_talk[i]);
-			portrait_talk_s[i] = sprite_get_speed(portrait_talk[i])/room_speed;
-		}
-		if(portrait_idle[i] != -1){ 
-			portrait_idle_n[i] = sprite_get_number(portrait_idle[i]);
-			portrait_idle_s[i] = sprite_get_speed(portrait_idle[i])/room_speed;
-		}
+		//if(portrait_talk[i] != -1){ 
+		//	portrait_talk_n[i] = sprite_get_number(portrait_talk[i]);
+		//	portrait_talk_s[i] = sprite_get_speed(portrait_talk[i])/room_speed;
+		//}
+		//if(portrait_idle[i] != -1){ 
+		//	portrait_idle_n[i] = sprite_get_number(portrait_idle[i]);
+		//	portrait_idle_s[i] = sprite_get_speed(portrait_idle[i])/room_speed;
+		//}
 		i++;
 	}
 	

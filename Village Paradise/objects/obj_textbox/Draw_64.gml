@@ -1,39 +1,39 @@
 //Draw textbox
-draw_sprite_ext(dialogue_box, 0, pos_x,pos_y, scale,scale, 0, c_white, 1);
+draw_sprite_ext(dialogue_box, 0, pos_x-32,pos_y, scale,scale, 0, c_white, 1);
 
 //Draw portrait
-if(portrait[page] != -1){
-	draw_sprite_ext(portrait[page], emotion[page], pos_x-portraitWidth, pos_y, scale,scale, 0, c_white, 1);
+//if(portrait[page] != -1){
+//	draw_sprite_ext(portrait[page], emotion[page], pos_x-portraitWidth, pos_y, scale,scale, 0, c_white, 1);
 
-	#region Idle Animated Portrait
-if(type[page] == 1 or charCount >= str_len) {
-	if(portrait_idle[page] != -1){
-		var posx = pos_x-portraitWidth; var posy = pos_y;
-		if(portrait_idle_x[page] != -1){ posx += portrait_idle_x[page] * scale; }
-		if(portrait_idle_y[page] != -1){ posy += portrait_idle_y[page] * scale; }
+//	#region Idle Animated Portrait
+//if(type[page] == 1 or charCount >= str_len) {
+//	if(portrait_idle[page] != -1){
+//		var posx = pos_x-portraitWidth; var posy = pos_y;
+//		if(portrait_idle_x[page] != -1){ posx += portrait_idle_x[page] * scale; }
+//		if(portrait_idle_y[page] != -1){ posy += portrait_idle_y[page] * scale; }
 		
-		portrait_idle_c += portrait_idle_s[page];
-		if(portrait_idle_c >= portrait_idle_n[page]){ portrait_idle_c = 0; }
-		draw_sprite_ext(portrait_idle[page], portrait_idle_c, posx, posy, scale,scale, 0, c_white, 1);	
-	}
-}
-#endregion
+//		portrait_idle_c += portrait_idle_s[page];
+//		if(portrait_idle_c >= portrait_idle_n[page]){ portrait_idle_c = 0; }
+//		draw_sprite_ext(portrait_idle[page], portrait_idle_c, posx, posy, scale,scale, 0, c_white, 1);	
+//	}
+//}
+//#endregion
 
-	draw_sprite_ext(portrait_frame, 0, pos_x-portraitWidth, pos_y, scale,scale, 0, c_white, 1);
-}
+//	draw_sprite_ext(portrait_frame, 0, pos_x-portraitWidth, pos_y, scale,scale, 0, c_white, 1);
+//}
 
 #region Draw name and namebox
 var cname = name[page]
 
 if(cname != "None"){
 	//Draw namebox
-	draw_sprite_ext(name_box, 0, name_box_x,name_box_y, scale,scale, 0, c_white, 1);
+	draw_sprite_ext(name_box, 0, name_box_x-32,name_box_y, scale,scale, 0, c_white, 1);
 	
 	//Draw name text
 	c = name_col;
 	draw_set_halign(fa_center);
 	draw_set_font(name_font);
-	draw_text_color(name_box_text_x, name_box_text_y, cname, c,c,c,c, 1);
+	draw_text_color(name_box_text_x-32, name_box_text_y, cname, c,c,c,c, 1);
 	draw_set_halign(fa_left);
 }
 #endregion
@@ -57,7 +57,7 @@ if(type[page] == 1){
 		
 		//Draw our choices
 		var ctext = "* "+tp[ii];
-		draw_text_ext_color(xx, yy+((ii+iy)*stringHeight), ctext, stringHeight, txtwidth, col, col, col, col, 1); 
+		draw_text_ext_color(xx-32, yy+((ii+iy)*stringHeight), ctext, stringHeight, txtwidth, col, col, col, col, 1); 
 		
 		if(string_width(ctext) > txtwidth) { iy++; }
 		ii++; 
@@ -111,7 +111,7 @@ else {
 						if(portrait_talk_x[page] != -1){ posx += portrait_talk_x[page] * scale; }
 						if(portrait_talk_y[page] != -1){ posy += portrait_talk_y[page] * scale; }
 		
-						portrait_talk_c += portrait_talk_s[page];
+						//portrait_talk_c += portrait_talk_s[page];
 		
 						//To include the consideration of vowels
 						//*/
@@ -129,8 +129,8 @@ else {
 							audio_c = charCount + audio_increment; 
 						} 
 						//*/
-						if(portrait_talk_c > portrait_talk_n[page]){ portrait_talk_c = 0; }
-						draw_sprite_ext(portrait_talk[page], portrait_talk_c, posx, posy, scale,scale, 0, c_white, 1);	
+						//if(portrait_talk_c > portrait_talk_n[page]){ portrait_talk_c = 0; }
+						//draw_sprite_ext(portrait_talk[page], portrait_talk_c, posx, posy, scale,scale, 0, c_white, 1);	
 					}
 				} 
 				#endregion
@@ -185,23 +185,23 @@ else {
 		
 		switch(effect){
 			case 0:	//normal
-				draw_text_color(xx + (cx*charSize), yy+(cy*stringHeight), letter, col, col, col, col, 1);
+				draw_text_color(xx + (cx*charSize-32), yy+(cy*stringHeight), letter, col, col, col, col, 1);
 				break;
 			
 			case 1:	//shakey
-				draw_text_color(xx + (cx*charSize)+random_range(-1,1), yy+(cy*stringHeight)+random_range(-1,1), letter, col, col, col, col, 1);
+				draw_text_color(xx + (cx*charSize-32)+random_range(-1,1), yy+(cy*stringHeight)+random_range(-1,1), letter, col, col, col, col, 1);
 				break;
 			
 			case 2:	//wave
 				var so = t;
 				var shift = sin(so*pi*freq/room_speed)*amplitude;
-				draw_text_color(xx + (cx*charSize), yy+(cy*stringHeight)+shift, letter, col, col, col, col, 1);
+				draw_text_color(xx + (cx*charSize-32), yy+(cy*stringHeight)+shift, letter, col, col, col, col, 1);
 				break; 
 			
 			case 3: //colour shift
 				var c1 = make_colour_hsv(t+cc, 255, 255);
 				var c2 = make_colour_hsv(t+cc+34, 255, 255);
-				draw_text_color(xx + (cx*charSize), yy+(cy*stringHeight), letter, c1, c1, c2, c2, 1);
+				draw_text_color(xx + (cx*charSize-32), yy+(cy*stringHeight), letter, c1, c1, c2, c2, 1);
 				break;
 		
 			case 4: //wave AND colour shift
@@ -209,7 +209,7 @@ else {
 				var shift = sin(so*pi*freq/room_speed)*amplitude;
 				var c1 = make_colour_hsv(t+cc, 255, 255);
 				var c2 = make_colour_hsv(t+cc+45, 255, 255);
-				draw_text_color(xx + (cx*charSize), yy+(cy*stringHeight)+shift, letter, c1, c1, c2, c2, 1);
+				draw_text_color(xx + (cx*charSize-32), yy+(cy*stringHeight)+shift, letter, c1, c1, c2, c2, 1);
 				break; 
 		
 			case 5: //spin
@@ -217,7 +217,7 @@ else {
 				var shift = sin(so*pi*freq/room_speed);
 				var mv = charSize/2;
 				draw_set_valign(fa_middle); draw_set_halign(fa_middle);
-				draw_text_transformed_color(xx + (cx*charSize)+mv, yy+(cy*stringHeight)+(stringHeight/2), letter, 1, 1, shift*20, col, col, col, col, 1);
+				draw_text_transformed_color(xx + (cx*charSize-32)+mv, yy+(cy*stringHeight)+(stringHeight/2), letter, 1, 1, shift*20, col, col, col, col, 1);
 				draw_set_valign(fa_top); draw_set_halign(fa_left);
 				break;
 				
@@ -226,14 +226,14 @@ else {
 				var shift = abs(sin(so*pi*freq/room_speed));
 				var mv = charSize/2;
 				draw_set_valign(fa_middle); draw_set_halign(fa_middle);
-				draw_text_transformed_color(xx + (cx*charSize)+mv, yy+(cy*stringHeight)+(stringHeight/2), letter, shift, shift, 0, col, col, col, col, 1);
+				draw_text_transformed_color(xx + (cx*charSize-32)+mv, yy+(cy*stringHeight)+(stringHeight/2), letter, shift, shift, 0, col, col, col, col, 1);
 				draw_set_valign(fa_top); draw_set_halign(fa_left);
 				break;
 				
 			case 7:	//flicker
 				var so = t + cc;
 				var shift = sin(so*pi*freq/room_speed);
-				draw_text_color(xx + (cx*charSize), yy+(cy*stringHeight), letter, col, col, col, col, shift+random_range(-1,1));
+				draw_text_color(xx + (cx*charSize-32), yy+(cy*stringHeight), letter, col, col, col, col, shift+random_range(-1,1));
 				break; 
 		}
 		
@@ -248,7 +248,7 @@ else {
 		var shift = sin((t+cc)*pi*freq/room_speed)*amplitude;
 		finishede_count += finishede_spd;
 		if(finishede_count >= finishede_num){ finishede_count = 0; }
-		draw_sprite(finished_effect, finishede_count, finishede_x + shift, finishede_y);
+		draw_sprite(finished_effect, finishede_count, finishede_x + shift-32, finishede_y);
 	}
 	#endregion
 }

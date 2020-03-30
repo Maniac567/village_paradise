@@ -4,8 +4,8 @@ if(instance_number(obj_textevent)>1 or instance_number(obj_textbox)>1){ instance
 
 //-----------Customise (FOR USER)
 interact_key		= ord("E");
-up_key				= o_input.up_;		//for dialogue choices
-down_key			= o_input.down_;		//for dialogue choices
+up_key				= vk_up;		//for dialogue choices
+down_key			= vk_down;		//for dialogue choices
 
 scale				= 1;
 x_buffer			= 10 * scale;

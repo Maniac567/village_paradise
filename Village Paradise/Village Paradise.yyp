@@ -391,14 +391,6 @@
             }
         },
         {
-            "Key": "54d54171-5c16-43e4-814b-60c3312acae6",
-            "Value": {
-                "id": "cffc1b70-44bb-42b5-abbd-2014a8036470",
-                "resourcePath": "rooms\\rm_dialoguesystem_demo\\rm_dialoguesystem_demo.yy",
-                "resourceType": "GMRoom"
-            }
-        },
-        {
             "Key": "57dec62d-9ad0-4d05-85bf-948c81f5184b",
             "Value": {
                 "id": "d3d29bd1-1956-480e-ae31-8d9ba01f59eb",

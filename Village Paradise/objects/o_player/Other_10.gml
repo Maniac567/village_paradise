@@ -1,4 +1,6 @@
 /// @description Move State
+if (instance_exists(obj_textbox)) exit;
+
 image_speed = 0;
 var _x_input = o_input.right_ - o_input.left_;
 var _y_input = o_input.down_ - o_input.up_;
