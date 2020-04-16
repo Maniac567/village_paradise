@@ -12,9 +12,4 @@ if sprite_exists(paused_sprite_)
 if (o_game.paused_)
 {
 	inventory_draw(0, 36);
-	inventory_draw_2d(0, 80)
-}
-else if (!o_game.paused_)
-{
-	inventory_draw(0, 148);
 }

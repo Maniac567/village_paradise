@@ -1,12 +1,12 @@
-if (!paused_)
+if (paused_)
 {
 	var _array_size = array_length_1d(global.inventory);
 	
-	if (o_input.mouse_wheel_up_)
+	if (o_input.right_pressed_)
 	{
 		item_index_ = min(item_index_+1, _array_size-1);
 	}
-	if (o_input.mouse_wheel_down_)
+	if (o_input.left_pressed_)
 	{
 		item_index_ = max(item_index_-1, 0);
 	}
