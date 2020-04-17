@@ -7,7 +7,6 @@ direction_facing_ = dir.right;
 
 enum player {
 	move,
-	axe,
 	shovel
 }
 
@@ -33,10 +32,10 @@ sprite_[player.move, dir.up] = s_player_run_up;
 sprite_[player.move, dir.left] = s_player_run_right;
 sprite_[player.move, dir.down] = s_player_run_down;
 
-//sprite_[player.bow, dir.right] = s_player_bow_right;
-//sprite_[player.bow, dir.up] = s_player_bow_up;
-//sprite_[player.bow, dir.left] = s_player_bow_right;
-//sprite_[player.bow, dir.down] = s_player_bow_down;
+sprite_[player.shovel, dir.right] = s_player_run_right;
+sprite_[player.shovel, dir.up] = s_player_run_up;
+sprite_[player.shovel, dir.left] = s_player_run_right;
+sprite_[player.shovel, dir.down] = s_player_run_down;
 
 //--------Dialogue Stuff
 reset_dialogue_defaults();

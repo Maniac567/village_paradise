@@ -10,6 +10,15 @@ if (paused_)
 	{
 		item_index_ = max(item_index_-1, 0);
 	}
+	
+	if (o_input.action_one_pressed_)
+	{
+		global.item[0] = global.inventory[item_index_];
+	}
+	if (o_input.action_two_pressed_)
+	{
+		global.item[1] = global.inventory[item_index_];
+	}
 }
 
 if (o_input.pause_pressed_)

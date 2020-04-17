@@ -119,6 +119,14 @@
             }
         },
         {
+            "Key": "14d6755d-feac-4e76-85a1-625ae64f4c40",
+            "Value": {
+                "id": "60b98dbd-c1df-4bde-b814-fb09d26b1d36",
+                "resourcePath": "scripts\\is_in_destroyed_list\\is_in_destroyed_list.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "15d10b25-a862-41a7-b164-03f7b425b371",
             "Value": {
                 "id": "109cbfe2-a331-4f49-965c-d10331dfd0d9",
@@ -639,6 +647,14 @@
             }
         },
         {
+            "Key": "b34fa01e-56e8-4a16-9b68-b6beb73c18ec",
+            "Value": {
+                "id": "5b982476-4527-42be-a8bb-61840b4eb8f3",
+                "resourcePath": "scripts\\instance_key\\instance_key.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "b83efd5a-24c7-44dd-bc04-eebb2c221739",
             "Value": {
                 "id": "77b34376-dab6-4aa2-854c-928d634853e9",
@@ -839,6 +855,14 @@
             }
         },
         {
+            "Key": "e8e98e29-edc7-48be-bf2a-3009f0afa708",
+            "Value": {
+                "id": "162d19d1-8209-4dcc-af08-ad586eb63a4f",
+                "resourcePath": "objects\\o_dirt_hole\\o_dirt_hole.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "ec8656a7-ce96-48eb-bd77-55873f6815a4",
             "Value": {
                 "id": "d8fac49d-bbf3-450a-9444-e8a051474f45",
@@ -884,6 +908,14 @@
                 "id": "21567a2e-2944-44dc-9e15-59d27c12362f",
                 "resourcePath": "scripts\\array_find_index\\array_find_index.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "f036a357-f6f9-433e-9eda-40a530488baa",
+            "Value": {
+                "id": "8f3cc942-d0df-4630-9716-29f1cf9b9e68",
+                "resourcePath": "sprites\\s_dirt_hole\\s_dirt_hole.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -989,7 +1021,9 @@
         "22c57393-d17c-4500-b428-2d67f27d9725",
         "d0cbf33f-2b88-430a-92bc-d8adabf7fd7e",
         "57dec62d-9ad0-4d05-85bf-948c81f5184b",
-        "02a93034-8f6e-4718-a90d-ef3a3edfc5ae"
+        "02a93034-8f6e-4718-a90d-ef3a3edfc5ae",
+        "14d6755d-feac-4e76-85a1-625ae64f4c40",
+        "b34fa01e-56e8-4a16-9b68-b6beb73c18ec"
     ],
     "tutorial": ""
 }
