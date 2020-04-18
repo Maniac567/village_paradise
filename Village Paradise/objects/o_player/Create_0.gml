@@ -7,7 +7,8 @@ direction_facing_ = dir.right;
 
 enum player {
 	move,
-	shovel
+	shovel,
+	axe
 }
 
 enum dir {
@@ -36,6 +37,11 @@ sprite_[player.shovel, dir.right] = s_player_run_right;
 sprite_[player.shovel, dir.up] = s_player_run_up;
 sprite_[player.shovel, dir.left] = s_player_run_right;
 sprite_[player.shovel, dir.down] = s_player_run_down;
+
+sprite_[player.axe, dir.right] = s_player_run_right;
+sprite_[player.axe, dir.up] = s_player_run_up;
+sprite_[player.axe, dir.left] = s_player_run_right;
+sprite_[player.axe, dir.down] = s_player_run_down;
 
 //--------Dialogue Stuff
 reset_dialogue_defaults();

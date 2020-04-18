@@ -274,7 +274,7 @@
             "Key": "3a6c178c-c972-4f7f-90d5-ab91183e9869",
             "Value": {
                 "id": "125f86a7-24da-4fbc-a308-5989a7ffac48",
-                "resourcePath": "sprites\\s_sword_item\\s_sword_item.yy",
+                "resourcePath": "sprites\\s_shovel_item\\s_shovel_item.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -524,6 +524,14 @@
                 "id": "508b04db-2acf-4424-a5ea-8649716ae795",
                 "resourcePath": "scripts\\approach\\approach.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "7f5ad6e1-dfe0-499b-8206-531325051b10",
+            "Value": {
+                "id": "40cf3c65-3848-4ff2-acd3-64fc6c40848a",
+                "resourcePath": "sprites\\s_axe_item\\s_axe_item.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
