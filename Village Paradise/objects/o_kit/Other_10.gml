@@ -1,5 +1,10 @@
+///@description Talk State
+
 //---You can update variables here!---//
 reset_dialogue_defaults();
+talking_ = true;
+var _talk_direction = point_direction(x, y, o_player.x, o_player.y);
+get_direction_facing(_talk_direction);
 
 
 switch(choice_variable){
@@ -28,6 +33,7 @@ switch(choice_variable){
 		i++;
 		myText[i]		= "Yes! It does look great, doesn't it? Glad you agree with me.";
 		mySpeaker[i]	= id;
+		//myScripts[i]    = [[end_dialogue]];
 		myNextLine[i]   = -1
 		
 		//Line 4
@@ -35,7 +41,7 @@ switch(choice_variable){
 		myText[i]		= "Yeah, I guess it could look more presentable, but maybe you can help?";
 		//myEffects[i]	= [13,1, 18,0];
 		mySpeaker[i]	= id;
-		//myTextCol[i]	= [13, c_lime, 18, c_white];
+		//myScripts[i]    = [[end_dialogue]];
 
 		//Line 5
 		//i++;
@@ -77,6 +83,7 @@ switch(choice_variable){
 		//myEmotion[i]	= 2;
 		//myEmote[i]		= 9;
 		//mySpeaker[i]	= id;
+		
 		#endregion
 	break;
 	
@@ -94,7 +101,6 @@ switch(choice_variable){
 		//uncommenting this will make the first conversation begin again
 		//choice_variable	= -1;
 	#endregion
-	
 	break;
 	
 	case "blue":
