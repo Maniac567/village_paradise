@@ -1,1 +1,1 @@
-talking_ = false;
+can_move_ = false;

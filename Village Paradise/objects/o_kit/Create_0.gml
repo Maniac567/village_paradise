@@ -19,7 +19,7 @@ choice_variable		= -1;	//the variable we change depending on the player's choice
 
 acceleration_ = .5;
 max_speed_ = 1.5;
-talking_ = false;
+can_move_ = true;
 direction_facing_ = dirKit.down;
 alarm[0] = 1;
 

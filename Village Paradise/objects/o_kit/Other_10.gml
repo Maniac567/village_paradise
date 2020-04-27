@@ -2,7 +2,6 @@
 
 //---You can update variables here!---//
 reset_dialogue_defaults();
-talking_ = true;
 var _talk_direction = point_direction(x, y, o_player.x, o_player.y);
 get_direction_facing(_talk_direction);
 
