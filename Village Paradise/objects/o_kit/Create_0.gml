@@ -19,7 +19,6 @@ choice_variable		= -1;	//the variable we change depending on the player's choice
 
 acceleration_ = .5;
 max_speed_ = 1.5;
-can_move_ = true;
 direction_facing_ = dirKit.down;
 alarm[0] = 1;
 
@@ -36,7 +35,7 @@ enum dirKit {
 	down
 };
 
-starting_state_ = kit.move;
+starting_state_ = kit.idle;
 state_ = starting_state_;
 
 x_input_ = 0;

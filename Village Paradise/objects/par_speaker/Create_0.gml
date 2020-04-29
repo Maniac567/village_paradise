@@ -3,6 +3,7 @@
 playerobject = o_player;
 interact_key = ord("E");
 detection_radius = 32;
+can_move_ = true;
 
 myVoice			= snd_voice1;
 myPortrait		= -1;

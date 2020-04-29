@@ -9,7 +9,7 @@ global.font = draw_set_font(fnt_dialogue);
 draw_set_font(global.font);
 
 global.player_gems = 0;
-//global.player_start_position = i_game_start;
+global.player_start_position = i_game_start;
 //global.load = false;
 global.start_x = noone;
 global.start_y = noone;

@@ -3,6 +3,7 @@ right_ = keyboard_check(vk_right);
 left_ = keyboard_check(vk_left);
 up_ = keyboard_check(vk_up);
 down_ = keyboard_check(vk_down);
+shift_ = keyboard_check(vk_shift);
 
 action_one_pressed_ = mouse_check_button_pressed(mb_left);
 action_two_pressed_ = mouse_check_button_pressed(mb_right);

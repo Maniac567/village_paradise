@@ -11,12 +11,24 @@ if _x_input == 0 and _y_input == 0 {
 	image_speed = 0;
 	apply_friction_to_movement_entity();
 } else {
-	image_speed = 0.4;
-	if _x_input != 0 {
-		image_xscale = _x_input;
+	if (!o_input.shift_)
+	{
+		image_speed = 0.4;
+		if _x_input != 0 {
+			image_xscale = _x_input;
+		}
+		get_direction_facing(_input_direction);
+		add_movement_maxspeed(_input_direction, acceleration_, max_speed_);
 	}
-	get_direction_facing(_input_direction);
-	add_movement_maxspeed(_input_direction, acceleration_, max_speed_);
+	else
+	{
+		image_speed = 0.6;
+		if _x_input != 0 {
+			image_xscale = _x_input;
+		}
+		get_direction_facing(_input_direction);
+		add_movement_maxspeed(_input_direction, acceleration_+1.5, max_speed_+1.5);
+	}
 }
 
 use_inventory_item(o_input.action_one_pressed_, global.item[0], action.one);

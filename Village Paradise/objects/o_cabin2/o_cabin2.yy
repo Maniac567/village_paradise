@@ -4,7 +4,16 @@
     "mvc": "1.0",
     "name": "o_cabin2",
     "eventList": [
-        
+        {
+            "id": "f1c71884-aa5b-4d34-989f-da8805820d6e",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 0,
+            "m_owner": "68b4e8c9-b158-4b5d-b569-e5d93c0f3f75"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
