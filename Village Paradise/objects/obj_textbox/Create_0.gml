@@ -7,7 +7,7 @@ interact_key		= ord("E");
 up_key				= vk_up;		//for dialogue choices
 down_key			= vk_down;		//for dialogue choices
 
-scale				= 1;
+scale				= 1.1;
 x_buffer			= 10 * scale;
 y_buffer			= 7 * scale;
 

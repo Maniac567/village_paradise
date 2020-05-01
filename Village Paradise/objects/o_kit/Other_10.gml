@@ -13,77 +13,24 @@ switch(choice_variable){
 		var i = 0;
 		myText[i]		= "Hello! How are you doing today?";
 		mySpeaker[i]	= id;
-		//myScripts[i]	= [create_instance_layer, 170,120,"Instances",obj_emote];
 		
 		//Line 1
 		i++;
 		myText[i]		= ["Let's chat!", "See ya!"];
 		myTypes[i]		= 1;
 		mySpeaker[i]	= o_player;
-		myNextLine[i]	= [3,2];
+		myNextLine[i]	= [2,-1];
 		
 		//Line 2
 		i++;
-		myText[i]		= "See you later!";
+		myText[i]		= "Did you know that you can run faster by holding 'LSHIFT' on the keyboard?";
 		mySpeaker[i]	= id;
-		//myScripts[i]	= [[end_dialogue]];
-		myNextLine[i]   = -1;
 		
 		//Line 3
 		i++;
-		myText[i]		= "Did you know that you can run faster by holding 'LSHIFT' on the keyboard?";
-		mySpeaker[i]	= id;
-		//myScripts[i]    = [[end_dialogue]];
-		
-		
-		//Line 4
-		i++;
 		myText[i]		= "Makes things much faster to get to places.";
-		//myEffects[i]	= [13,1, 18,0];
 		mySpeaker[i]	= id;
-		//myNextLine[i]   = -1;
 
-		//Line 5
-		//i++;
-		//myText[i]		= "We both know blue is the best colour.";
-		//myEmotion[i]	= 1;
-		//myEmote[i]		= 0;
-		//mySpeaker[i]	= id;
-		//myTextCol[i]	= [14, c_aqua, 18, c_white];
-
-		////Line 6
-		//i++;
-		//myText[i]		= "Say it... or else.";
-		//myTextSpeed[i]	= [1,0.5, 10,0.1];
-		//myEmotion[i]	= 0;
-		//myEmote[i]		= 4;
-		//mySpeaker[i]	= id;
-		//myTextCol[i]	= [11, c_red, 18, c_white];
-
-		////Line 7
-		//i++;
-		//myText[i]		= ["(sarcastically) Blue is the best colour.", "Green is the best colour."];
-		//myTypes[i]		= 1;
-		//myNextLine[i]	= [8,9];
-		//myScripts[i]	= [[change_variable, id, "choice_variable", "blue"], [change_variable, id, "choice_variable", "green"]];
-		//mySpeaker[i]	= o_player;
-
-		////Line 8
-		//i++;
-		//myText[i]		= "Exactly! Thank you!";
-		//myEmotion[i]	= 0;
-		//myEmote[i]		= 0;
-		//myNextLine[i]	= -1;
-		//mySpeaker[i]	= id;
-
-		////Line 9
-		//i++;
-		//myText[i]		= "Nooooooooooooooooooooooo!";
-		//myTextSpeed[i]	= [1,1, 6,0.3, 10,1];
-		//myEmotion[i]	= 2;
-		//myEmote[i]		= 9;
-		//mySpeaker[i]	= id;
-		
 		#endregion
 	break;
 	

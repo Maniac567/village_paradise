@@ -999,6 +999,14 @@
             }
         },
         {
+            "Key": "d865f316-79e3-4c84-9441-9bf289ecb8f1",
+            "Value": {
+                "id": "528b9815-28bf-485c-ad43-106f8b758630",
+                "resourcePath": "fonts\\f_dialogue\\f_dialogue.yy",
+                "resourceType": "GMFont"
+            }
+        },
+        {
             "Key": "da00d13c-3854-4c9d-8125-1759e7192da5",
             "Value": {
                 "id": "37c002de-230e-44b6-9893-c9e968bcbb2e",
