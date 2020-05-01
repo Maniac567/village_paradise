@@ -47,8 +47,8 @@ sprite_[player.axe, dir.down] = s_player_run_down;
 reset_dialogue_defaults();
 myPortrait			= spr_portrait_player;
 myVoice				= snd_voice2;
-myFont				= fnt_dialogue;
-myName				= "Fox";
+myFont				= global.font;
+myName				= "Panda";
 
 myPortraitTalk		= spr_portrait_examplechar_mouth;
 myPortraitTalk_x	= 26;

@@ -13,34 +13,35 @@ switch(choice_variable){
 		var i = 0;
 		myText[i]		= "Hello! How are you doing today?";
 		mySpeaker[i]	= id;
-		myScripts[i]	= [create_instance_layer, 170,120,"Instances",obj_emote];
+		//myScripts[i]	= [create_instance_layer, 170,120,"Instances",obj_emote];
 		
 		//Line 1
 		i++;
-		myText[i]		= "How do you think our little village looks so far?";
-		mySpeaker[i]	= id;
+		myText[i]		= ["Let's chat!", "See ya!"];
+		myTypes[i]		= 1;
+		mySpeaker[i]	= o_player;
+		myNextLine[i]	= [3,2];
 		
 		//Line 2
 		i++;
-		myText[i]		= ["It looks great!", "It's okay..."];
-		myTypes[i]		= 1;
-		mySpeaker[i]	= o_player;
-		//myScripts[i]	= [[create_instance_layer, 170,120,"Instances",obj_emote], [create_instance_layer, 170,120,"Instances",obj_examplechar]];
-		myNextLine[i]	= [3,4];
+		myText[i]		= "See you later!";
+		mySpeaker[i]	= id;
+		//myScripts[i]	= [[end_dialogue]];
+		myNextLine[i]   = -1;
 		
 		//Line 3
 		i++;
-		myText[i]		= "Yes! It does look great, doesn't it? Glad you agree with me.";
+		myText[i]		= "Did you know that you can run faster by holding 'LSHIFT' on the keyboard?";
 		mySpeaker[i]	= id;
 		//myScripts[i]    = [[end_dialogue]];
-		myNextLine[i]   = -1
+		
 		
 		//Line 4
 		i++;
-		myText[i]		= "Yeah, I guess it could look more presentable, but maybe you can help?";
+		myText[i]		= "Makes things much faster to get to places.";
 		//myEffects[i]	= [13,1, 18,0];
 		mySpeaker[i]	= id;
-		//myScripts[i]    = [[end_dialogue]];
+		//myNextLine[i]   = -1;
 
 		//Line 5
 		//i++;

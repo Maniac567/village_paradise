@@ -3,7 +3,6 @@
 #region TYPE 0: NORMAL
 if(type[page] == 0){
 	if(keyboard_check_pressed(interact_key)){
-		par_speaker.can_move_ = false;
 
 		//If we haven't "typed out" all the letters, immediately "type out" all letters (works as a "skip")
 		if(charCount < str_len){
@@ -20,7 +19,7 @@ if(type[page] == 0){
 			}
 			event_perform(ev_alarm, 0);
 			
-		} else { event_perform(ev_other, ev_user0); instance_destroy(); par_speaker.can_move_ = true; }
+		} else { event_perform(ev_other, ev_user0); instance_destroy(); }
 	}
 } 
 #endregion

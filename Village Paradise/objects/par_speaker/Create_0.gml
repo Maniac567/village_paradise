@@ -7,7 +7,7 @@ can_move_ = true;
 
 myVoice			= snd_voice1;
 myPortrait		= -1;
-myFont			= fnt_dialogue;
+myFont			= global.font;
 myName			= "None";
 
 myPortraitTalk		= -1;

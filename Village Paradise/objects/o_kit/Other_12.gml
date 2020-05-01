@@ -1,6 +1,6 @@
 /// @description Move State
 
-if (!can_move_) exit;
+if (!can_move_) { image_speed = 0; exit; }
 
 image_speed = .4;
 
