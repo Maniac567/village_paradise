@@ -8,6 +8,8 @@ instance_create_layer(0, 0, "Instances", o_input);
 global.font = fnt_dialogue;
 draw_set_font(global.font);
 
+global.dialogue = ds_map_create();
+
 global.player_gems = 0;
 global.player_start_position = i_game_start;
 //global.load = false;
@@ -30,3 +32,5 @@ item_index_ = 0;
 inventory_create(10);
 inventory_add_item(o_axe_item);
 inventory_add_item(o_shovel_item);
+
+create_dialogue_map();
