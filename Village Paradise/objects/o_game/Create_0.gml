@@ -33,4 +33,9 @@ inventory_create(10);
 inventory_add_item(o_axe_item);
 inventory_add_item(o_shovel_item);
 
+second_ = 0;
+minute_ = 0;
+hour_ = 0;
+day_ = "";
+
 create_dialogue_map();

@@ -45,3 +45,20 @@ if (o_input.pause_pressed_)
 		instance_activate_object(o_input);
 	}
 }
+
+// Getting current internal time
+	
+second_ = current_second;
+minute_ = current_minute;
+hour_ = current_hour;
+
+switch(current_weekday)
+{
+   case 0: day_ = "Sunday"; break;
+   case 1: day_ = "Monday"; break;
+   case 2: day_ = "Tuesday"; break;
+   case 3: day_ = "Wednesday"; break;
+   case 4: day_ = "Thursday"; break;
+   case 5: day_ = "Friday"; break;
+   case 6: day_ = "Saturday"; break;
+}

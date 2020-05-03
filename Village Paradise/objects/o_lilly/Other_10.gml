@@ -5,9 +5,9 @@ reset_dialogue_defaults();
 var _talk_direction = point_direction(x, y, o_player.x, o_player.y);
 get_direction_facing(_talk_direction);
 
-var _dialogue_choice = choose(0, 1);
+var _dialogue_choice = choose(0, 1, 2);
 var _current_dialogue = read_dialogue_map(global.dialogue, "lilly_dialogue", 0);
-var _dlength = array_length_1d(_current_dialogue);
+var _dlength = array_length_2d(_current_dialogue, _dialogue_choice);
 
 var i = 0;
 myText[i]		= "Hi there! Welcome to my home.";

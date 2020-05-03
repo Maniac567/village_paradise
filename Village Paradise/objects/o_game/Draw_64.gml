@@ -42,3 +42,6 @@ if instance_exists(_item)
 		draw_text(_box_x+20, _box_y+4, _item.amount_);
 	}
 }
+
+draw_text_transformed(5, 140, day_, 1.5, 1.5, image_angle);
+draw_text_transformed(5, 160, string(hour_) + ":" + string(minute_) + "." + string(second_), 1, 1, image_angle);
