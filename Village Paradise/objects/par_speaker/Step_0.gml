@@ -1,7 +1,7 @@
 var dr = detection_radius;
 if(point_in_rectangle(playerobject.x, playerobject.y, x-dr, y-dr, x+dr, y+dr)){
 	if(myTextbox != noone){ 
-		if(!instance_exists(myTextbox)){ myTextbox = noone; exit; }
+		if(!instance_exists(myTextbox)){ myTextbox = noone; can_move_ = true; exit; }
 	}
 	//if I haven't already created my textbox, make one:
 	else if(keyboard_check_pressed(interact_key)){
@@ -16,6 +16,5 @@ if(point_in_rectangle(playerobject.x, playerobject.y, x-dr, y-dr, x+dr, y+dr)){
 	if(myTextbox != noone){
 		with(myTextbox) instance_destroy();
 		myTextbox = noone;
-		can_move_ = true;
 	}
 }

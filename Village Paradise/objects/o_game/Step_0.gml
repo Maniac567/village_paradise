@@ -48,9 +48,18 @@ if (o_input.pause_pressed_)
 
 // Getting current internal time
 	
-second_ = current_second;
 minute_ = current_minute;
 hour_ = current_hour;
+
+if (current_hour > 12)
+{
+	hour_ = current_hour - 12;
+}
+if (current_hour == 0)
+{
+	hour_ = 12;
+}
+
 
 switch(current_weekday)
 {
@@ -61,4 +70,46 @@ switch(current_weekday)
    case 4: day_ = "Thursday"; break;
    case 5: day_ = "Friday"; break;
    case 6: day_ = "Saturday"; break;
+}
+
+switch(current_hour)
+{
+   case 0: am_pm_ = "AM"; break;
+   case 1: am_pm_ = "AM"; break;
+   case 2: am_pm_ = "AM"; break;
+   case 3: am_pm_ = "AM"; break;
+   case 4: am_pm_ = "AM"; break;
+   case 5: am_pm_ = "AM"; break;
+   case 6: am_pm_ = "AM"; break;
+   case 7: am_pm_ = "AM"; break;
+   case 8: am_pm_ = "AM"; break;
+   case 9: am_pm_ = "AM"; break;
+   case 10: am_pm_ = "AM"; break;
+   case 11: am_pm_ = "AM"; break;
+   case 12: am_pm_ = "PM"; break;
+   case 13: am_pm_ = "PM"; break;
+   case 14: am_pm_ = "PM"; break;
+   case 15: am_pm_ = "PM"; break;
+   case 16: am_pm_ = "PM"; break;
+   case 17: am_pm_ = "PM"; break;
+   case 18: am_pm_ = "PM"; break;
+   case 19: am_pm_ = "PM"; break;
+   case 20: am_pm_ = "PM"; break;
+   case 21: am_pm_ = "PM"; break;
+   case 22: am_pm_ = "PM"; break;
+   case 23: am_pm_ = "PM"; break;
+}
+
+switch(current_minute)
+{
+   case 0: minute_ = 00; break;
+   case 1: minute_ = 01; break;
+   case 2: minute_ = 02; break;
+   case 3: minute_ = 03; break;
+   case 4: minute_ = 04; break;
+   case 5: minute_ = 05; break;
+   case 6: minute_ = 06; break;
+   case 7: minute_ = 07; break;
+   case 8: minute_ = 08; break;
+   case 9: minute_ = 09; break;
 }
