@@ -43,6 +43,9 @@ if instance_exists(_item)
 	}
 }
 
+
+if !instance_exists(par_speaker) exit;
+
 if (o_player._input_direction != 0 or o_input.right_ or !par_speaker.can_move_)
 {
 	if (text_alpha_ > 0)

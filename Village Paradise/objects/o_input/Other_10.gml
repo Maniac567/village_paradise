@@ -16,3 +16,8 @@ up_pressed_ = keyboard_check_pressed(vk_up);
 down_pressed_ = keyboard_check_pressed(vk_down);
 
 pause_pressed_ = keyboard_check_pressed(vk_enter);
+
+num_1 = keyboard_check_pressed(vk_numpad1);
+num_2 = keyboard_check_pressed(vk_numpad2);
+num_3 = keyboard_check_pressed(vk_numpad3);
+num_4 = keyboard_check_pressed(vk_numpad4);
