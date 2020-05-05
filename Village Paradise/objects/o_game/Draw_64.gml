@@ -51,7 +51,7 @@ if (o_player._input_direction != 0 or o_input.right_ or !par_speaker.can_move_)
 	}
 	draw_set_alpha(text_alpha_);
 	draw_text_transformed(5, 140, day_, 1.5, 1.5, image_angle);
-	draw_text_transformed(5, 160, string(hour_) + ":" + string(minute_), 1, 1, image_angle);
+	draw_text_transformed(5, 160, string(hour_) + ":" + string(minute_) + " " + string(am_pm_), 1, 1, image_angle);
 	draw_set_alpha(1);
 }
 else
@@ -62,6 +62,6 @@ else
 	}
 	draw_set_alpha(text_alpha_);
 	draw_text_transformed(5, 140, day_, 1.5, 1.5, image_angle);
-	draw_text_transformed(5, 160, string(hour_) + ":" + string(minute_), 1, 1, image_angle);
+	draw_text_transformed(5, 160, string(hour_) + ":" + string(minute_) + " " + string(am_pm_), 1, 1, image_angle);
 	draw_set_alpha(1);
 }

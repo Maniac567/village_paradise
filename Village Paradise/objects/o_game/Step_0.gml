@@ -102,14 +102,14 @@ switch(current_hour)
 
 switch(current_minute)
 {
-   case 0: minute_ = 00; break;
-   case 1: minute_ = 01; break;
-   case 2: minute_ = 02; break;
-   case 3: minute_ = 03; break;
-   case 4: minute_ = 04; break;
-   case 5: minute_ = 05; break;
-   case 6: minute_ = 06; break;
-   case 7: minute_ = 07; break;
-   case 8: minute_ = 08; break;
-   case 9: minute_ = 09; break;
+   case 0: minute_ = "00"; break;
+   case 1: minute_ = "01"; break;
+   case 2: minute_ = "02"; break;
+   case 3: minute_ = "03"; break;
+   case 4: minute_ = "04"; break;
+   case 5: minute_ = "05"; break;
+   case 6: minute_ = "06"; break;
+   case 7: minute_ = "07"; break;
+   case 8: minute_ = "08"; break;
+   case 9: minute_ = "09"; break;
 }

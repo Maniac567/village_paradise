@@ -79,6 +79,14 @@
             }
         },
         {
+            "Key": "09e5f9d6-39bd-413e-b76d-d8d60cb52cb5",
+            "Value": {
+                "id": "a442d110-4812-4433-8bdd-1e2ea382e623",
+                "resourcePath": "shaders\\sh_daynight\\sh_daynight.yy",
+                "resourceType": "GMShader"
+            }
+        },
+        {
             "Key": "0adbdbd7-5019-4204-8870-24957aead60a",
             "Value": {
                 "id": "66ee6845-5f5e-484e-b5e7-f539832f61af",
@@ -655,6 +663,14 @@
             }
         },
         {
+            "Key": "82afcd4c-0ef6-4dd1-9a28-8ab846d225d1",
+            "Value": {
+                "id": "e6b88319-4a63-4479-85c3-963a34b1bb53",
+                "resourcePath": "scripts\\README_DayNight\\README_DayNight.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "82c0d52f-8aea-4704-ac76-72ea55f86523",
             "Value": {
                 "id": "fc76a6e3-e2a8-4bc5-bff3-7dad4002cdda",
@@ -740,6 +756,14 @@
                 "id": "6b7451ed-3469-49ef-bab6-ad562fe8d4ee",
                 "resourcePath": "views\\92e439a2-8eaf-414b-8441-0b8a3cfac273.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "96144f91-a181-4af6-8383-b25009f0216e",
+            "Value": {
+                "id": "1c91c3dd-15c5-48da-9bc4-a64799e15a2a",
+                "resourcePath": "objects\\o_shader_end\\o_shader_end.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -1111,6 +1135,14 @@
             }
         },
         {
+            "Key": "e793de48-88b0-4fa5-885e-c3772f17029e",
+            "Value": {
+                "id": "b4343cbc-7f2a-4ff5-92e0-d10ad8703e6b",
+                "resourcePath": "objects\\o_shader_start\\o_shader_start.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "e8e98e29-edc7-48be-bf2a-3009f0afa708",
             "Value": {
                 "id": "162d19d1-8209-4dcc-af08-ad586eb63a4f",
@@ -1307,7 +1339,8 @@
         "a0a55ded-8c07-4f8b-9f52-386579c820ca",
         "7f8c8b0c-560d-45b8-b107-d107fbec9d2b",
         "14d6755d-feac-4e76-85a1-625ae64f4c40",
-        "b34fa01e-56e8-4a16-9b68-b6beb73c18ec"
+        "b34fa01e-56e8-4a16-9b68-b6beb73c18ec",
+        "82afcd4c-0ef6-4dd1-9a28-8ab846d225d1"
     ],
     "tutorial": ""
 }

@@ -4,7 +4,26 @@
     "mvc": "1.0",
     "name": "o_cabin3",
     "eventList": [
-        
+        {
+            "id": "c6313ae6-7a94-4026-882e-49d47892397f",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 0,
+            "m_owner": "1b68d120-7b7f-4cdc-a791-c4218ead9d95"
+        },
+        {
+            "id": "ae0357b9-cd19-4ef5-ba88-10ff10f3e9be",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 8,
+            "m_owner": "1b68d120-7b7f-4cdc-a791-c4218ead9d95"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
